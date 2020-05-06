@@ -11,7 +11,7 @@
     }
   },
   "https_only": true,
-  "root": "dist/notes/",
+  "root": "build/",
   "routes": {
     "/**": "index.html"
   }
