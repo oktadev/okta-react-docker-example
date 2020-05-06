@@ -30,7 +30,7 @@ npm install
 
 Register a new application by going to **Applications** > **Add Application**. On the next screen, choose **Single Page App** and click **Next**.
 
-On the following screen, you can edit the application's settings. Make sure that the port number is 3000 and the base URI is `http://localhost:3000/`. Change the Login Redirect URI to `http://localhost:3000/login`. Once you are done, you will see a **Client ID**.
+On the following screen, you can edit the application's settings. Make sure that the port number is 3000 and the base URI is `http://localhost:3000/`. Change the Login Redirect URI to `http://localhost:3000/callback`. Once you are done, you will see a **Client ID**.
 
 ### Configure your Okta Settings
 
@@ -42,10 +42,10 @@ function App() {
       <Router>
         <Security issuer='https://{YourOktaDomain}/oauth2/default'
                   clientId='{ClientId}'
-                  redirectUri={window.location.origin + '/implicit/callback'}
+                  redirectUri={window.location.origin + '/callback'}
                pkce={true}>
           <SecureRoute path='/' exact={true} component={Calendar}/>
-          <Route path='/implicit/callback' component={LoginCallback}/>
+          <Route path='/callback' component={LoginCallback}/>
         </Security>
       </Router>
   );
