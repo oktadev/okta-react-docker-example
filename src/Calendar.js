@@ -27,15 +27,15 @@ export class Calendar extends Component {
     const today = moment();
 
     for (let w=0; w<firstWeekday; w++) {
-      calendarDays.push(<Day></Day>);
+      calendarDays.push(<Day key={Math.random()}/>); // empty days
     }
 
     for (let d=1; d<lastDate; d++) {
-      calendarDays.push(<Day today={date.date(d).isSame(today, 'day')}>{d}</Day>);
+      calendarDays.push(<Day key={d} today={date.date(d).isSame(today, 'day')}>{d}</Day>);
     }
 
     while (calendarDays.length % 7 !== 0) {
-      calendarDays.push(<Day></Day>);
+      calendarDays.push(<Day key={Math.random()}/>);
     }
 
     return calendarDays;

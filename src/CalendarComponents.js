@@ -30,10 +30,10 @@ export const PagingButton = styled.button`
 export const Day = styled.div`
   box-sizing: border-box;
   font-size: 24px;
-  width: ${100/7}%;
+  width: ${ 100 / 7 }%;
   padding: 8px;
-  background-color: ${props => props.today ? "#3f51b5" : "#f0f0f0"};
-  color: ${props => props.today ? "#ffffff" : "#000000"};
+  background-color: ${props => props.today ? '#3f51b5' : '#f0f0f0'};
+  color: ${props => props.today ? '#ffffff' : '#000000'};
   border: 2px solid #ffffff;
   height: 64px;
 `;
