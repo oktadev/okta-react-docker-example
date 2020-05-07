@@ -1,12 +1,11 @@
-# React Styled Components Example
+# React + Docker Example
  
-This example app shows how to create a React app and use Styled Components for its CSS.
-
-Please read [Build a React App with Styled Components](https://developer.okta.com/blog/2020/03/16/react-styled-components) to see how this app was created.
+This example app shows how to use Docker to containerize a React app.
 
 **Prerequisites:** 
 
-* [Node 12+](https://nodejs.org/en/) installed
+* [Node 12](https://nodejs.org/)+
+* [Docker](https://docs.docker.com/install/)
 * An [Okta Developer Account](https://developer.okta.com/signup)
 
 > [Okta](https://developer.okta.com/) has Authentication and User Management APIs that reduce development time with instant-on, scalable user infrastructure. Okta's intuitive API and expert support make it easy for developers to authenticate, manage and secure users and roles in any application.
@@ -21,8 +20,8 @@ Please read [Build a React App with Styled Components](https://developer.okta.co
 To install this example application, run the following commands:
 
 ```bash
-git clone https://github.com/oktadeveloper/okta-react-styled-components-example.git
-cd okta-react-styled-components-example
+git clone https://github.com/oktadeveloper/okta-react-docker-example.git
+cd okta-react-docker-example
 npm install
 ```
 
