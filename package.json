@@ -19,8 +19,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-docker": "docker build -t react-docker .",
-    "docker": "docker run -p 3000:80 react-docker"
+    "docker": "docker build -t react-docker .",
+    "react-docker": "docker run -p 3000:80 react-docker",
+    "pack": "pack build react-pack --builder heroku/buildpacks:18 --buildpack https://cnb-shim.herokuapp.com/v1/heroku-community/static",
+    "react-pack": "docker run -p 3000:80 react-pack"
   },
   "eslintConfig": {
     "extends": "react-app"
