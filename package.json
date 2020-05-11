@@ -21,8 +21,8 @@
     "eject": "react-scripts eject",
     "docker": "docker build -t react-docker .",
     "react-docker": "docker run -p 3000:80 react-docker",
-    "pack": "pack build react-pack --builder heroku/buildpacks --buildpack heroku/nodejs-engine,heroku/nodejs-npm,https://cnb-shim.herokuapp.com/v1/heroku-community/static",
-    "react-pack": "docker run --rm -it --init -p 5000:5000 --env PORT=5000 okta"
+    "pack": "pack build react-pack --builder heroku/buildpacks --buildpack heroku/nodejs,https://cnb-shim.herokuapp.com/v1/heroku-community/static",
+    "react-pack": "docker run --rm -it --init -p 3000:3000 --env PORT=3000 react-pack"
   },
   "eslintConfig": {
     "extends": "react-app"
