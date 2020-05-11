@@ -10,6 +10,7 @@
       "Feature-Policy": "accelerometer 'none'; camera 'none'; microphone 'none'"
     }
   },
+  "https_only": true,
   "root": "build/",
   "routes": {
     "/**": "index.html"
